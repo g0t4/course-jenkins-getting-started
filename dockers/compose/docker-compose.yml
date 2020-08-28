@@ -8,6 +8,7 @@ services:
     - "9080:8080"
     volumes:
     - ./jenkins_home:/var/jenkins_home
+    restart: unless-stopped
     # using a bind mount to the host `./jenkins_home` means I can easily peruse the jenkins_home files without needing to "get into the container"
     # a named volume is fine too - jenkins_home:/var/jenkins_home
 
