@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+
+  jenkins:
+    image: jenkins/jenkins:2.254
+    ports:
+    - "9080:8080"
+    volumes:
+    - ./jenkins_home:/var/jenkins_home
+    # using a bind mount to the host `./jenkins_home` means I can easily peruse the jenkins_home files without needing to "get into the container"
+    # a named volume is fine too - jenkins_home:/var/jenkins_home
+
+
+
+  # I like docker-compose because I can easily spin up multiple apps like a test email server alongside jenkins! for testing email notifications from jenkins (later)
+  mails:
+    image: mailhog/mailhog
+    ports:
+    - "8025:8025" # mailhog's web app (think test instance of gmail)
+    # "1025:1025" # mailhog has smtp on 1025 but I don't need to access that from the host, it's important for configuring test notifications from jenkins that route to mailhog
