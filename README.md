@@ -36,12 +36,17 @@ These repos house examples for following along:
   - [Extending Jenkins](https://www.jenkins.io/doc/developer/)
 - [Plugin Index](https://plugins.jenkins.io/)
 - Pipelines
+  - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
   - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
+  - [TODO - local instance too]
 - [Project Structure and Governance](https://www.jenkins.io/project)
   - [Sub-projects](https://www.jenkins.io/projects/)
     - JCasC (see below)
     - [Blue Ocean](https://www.jenkins.io/projects/blueocean/)
     - [Infrastructure](https://www.jenkins.io/projects/infrastructure/)
+      - [JIRA](https://issues.jenkins-ci.org/secure/Dashboard.jspa)
+      - [Jenkins 4 Jenkins](https://ci.jenkins.io/)
+        - Fun way to poke around and see some practical applications of Jenkins
     - [Meetups](https://www.jenkins.io/projects/jam/)
 
 ## 1st Edition resources
