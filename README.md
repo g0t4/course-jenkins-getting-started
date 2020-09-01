@@ -1,15 +1,23 @@
 # Jenkins Getting Started
 
-This is an update to my original [`Getting Started with Jenkins 2`](https://www.pluralsight.com/courses/jenkins-2-getting-started) course.
+*FYI the update is not yet complete*
 
-FYI: The `2` is dropped from the title even though I'm still covering the latest version of Jenkins 2.
-- This update also exists to trim some of the content for placement in a learning path. If you also want access to the [full 1st Edition course which is still largely relevant use this direct link](https://www.pluralsight.com/courses/jenkins-2-getting-started).
+- This is an update to my original [`Getting Started with Jenkins 2`](https://www.pluralsight.com/courses/jenkins-2-getting-started) course.
+  - You can follow this link to access the original course which is longer and has some content that wasn't included in the update given that we wanted to shrink the duration for placement into a jenkins learning path. And of course include relevant new features where applicable.
+  - FYI the vast majority of content in the 1st edition is still relevant in the latest versions of Jenkins!
+- In this update, the `2` is dropped from the title even though I'm still covering the latest version of Jenkins which is still `2`.
 
 ## Example repositories
 
 These repos house examples for following along:
 - [spring-petclinic](./docs/spring-petclinic.md)
-- ... MORE COMING SOON ...
+
+## docs/notes
+
+- [all docs](./docs)
+- [history](./docs/history.md)
+- [resources](.docs/resources.md)
+- [config-as-code](./docs/roadmap.config-as-code.md)
 
 ## 1st Edition resources
 
