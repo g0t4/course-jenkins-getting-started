@@ -8,7 +8,7 @@ FYI: The `2` is dropped from the title even though I'm still covering the latest
 ## Example repositories
 
 These repos house examples for following along:
-- [spring-petclinic](./README.spring-petclinic.md)
+- [spring-petclinic](./docs/spring-petclinic.md)
 - ... MORE COMING SOON ...
 
 ## Resources
