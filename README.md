@@ -7,10 +7,11 @@
   - FYI the vast majority of content in the 1st edition is still relevant in the latest versions of Jenkins!
 - In this update, the `2` is dropped from the title even though I'm still covering the latest version of Jenkins which is still `2`.
 
-## Example repositories
+## 2nd Edition Examples
 
 These repos house examples for following along:
 - [spring-petclinic](./docs/spring-petclinic.md)
+- ... MORE COMING SOON ...
 
 ## docs/notes
 
@@ -19,7 +20,7 @@ These repos house examples for following along:
 - [resources](.docs/resources.md)
 - [config-as-code](./docs/roadmap.config-as-code.md)
 
-## 1st Edition resources
+## 1st Edition Resources
 
 - Don't be confused by resources from the 1st Edition of my `Getting Started with Jenkins 2` course
 - [1st Edition Overview (Gist)](https://git.io/vKSVZ)
