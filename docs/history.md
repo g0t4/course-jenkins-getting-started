@@ -6,7 +6,10 @@ A bits of history to be aware of, especially terminology evolutions.
 
 Jenkins is a large, open-source effort with a vast community supporting it, notably the ecosystem of plugins. As such, changes take time to propagate and that can be years. Effectively several terms are now aliased and so it is helpful to be aware of a mapping between previous and current terminology.
 
-- Given the history of build tools starting out as well, build tools! It's common to find `build` lingo that no longer is intended to be limited to building applications but the lingo remains. So just be aware that you can think bigger than builds alone!
+- Given the history of build tools starting out as well, build tools! It's common to find `build` lingo that no longer is intended to be limited to building applications but the lingo remains. So just be aware that you can think bigger than builds alone
+  - `items`: a generic term that encompasses `folders`, `projects` and `jobs`
+    - `folder` is an `item` to group related `items` like on a filesystem
+    - `project` is an evolution of `job` and/or `build` to represent that automations can be vastly more complex than small tasks implied by building an app or running a single job.... like with `pipelines` you can represent what really is a series of `jobs` or `builds`/`deploys`/`tests` etc - so `project` just makes this name more generic to avoid constraining your imagination as we move through (fads) from `builds` to `CI` to `CD` and beyond!
 - `Jenkins` was first known as [`Hudson`](https://en.wikipedia.org/wiki/Hudson_(software))
   - `Hudson` was initially released in 2004 at Sun Microsystems
   - [Oracle acquired Sun in 2009/2010](https://en.wikipedia.org/wiki/Sun_acquisition_by_Oracle).
