@@ -6,6 +6,7 @@ A bits of history to be aware of, especially terminology evolutions.
 
 Jenkins is a large, open-source effort with a vast community supporting it, notably the ecosystem of plugins. As such, changes take time to propagate and that can be years. Effectively several terms are now aliased and so it is helpful to be aware of a mapping between previous and current terminology.
 
+- Given the history of build tools starting out as well, build tools! It's common to find `build` lingo that no longer is intended to be limited to building applications but the lingo remains. So just be aware that you can think bigger than builds alone!
 - `Jenkins` was first known as [`Hudson`](https://en.wikipedia.org/wiki/Hudson_(software))
   - `Hudson` was initially released in 2004 at Sun Microsystems
   - [Oracle acquired Sun in 2009/2010](https://en.wikipedia.org/wiki/Sun_acquisition_by_Oracle).
