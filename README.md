@@ -10,15 +10,17 @@
 ## 2nd Edition Examples
 
 These repos house examples for following along:
-- [spring-petclinic](./docs/spring-petclinic.md)
+- [spring-petclinic](docs/spring-petclinic.md)
 - ... MORE COMING SOON ...
 
 ## docs/notes
 
-- [all docs](./docs)
-- [history](./docs/history.md)
-- [resources](.docs/resources.md)
-- [config-as-code](./docs/roadmap.config-as-code.md)
+- [all docs](docs)
+  - [history](docs/history.md)
+  - [resources](docs/resources.md)
+  - [roadmap]
+    - [config-as-code](docs/roadmap.config-as-code.md)
+    - TODO add more I think are worth knowing
 
 ## 1st Edition Resources
 

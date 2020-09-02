@@ -31,7 +31,9 @@
     - JCasC (see below)
     - [Blue Ocean](https://www.jenkins.io/projects/blueocean/)
     - [Infrastructure](https://www.jenkins.io/projects/infrastructure/)
-      - [JIRA](https://issues.jenkins-ci.org/secure/Dashboard.jspa)
-      - [Jenkins 4 Jenkins](https://ci.jenkins.io/)
+      - [JIRA](https://issues.jenkins-ci.org)
+        - by component, ie [Core](https://issues.jenkins-ci.org/browse/WEBSITE-760?jql=component%20%3D%20core)
+      - [Jenkins 4 Jenkins!!](https://ci.jenkins.io/)
         - Fun way to poke around and see some practical applications of Jenkins
+        - Jenkins dogfooding itself!
     - [Meetups](https://www.jenkins.io/projects/jam/)
