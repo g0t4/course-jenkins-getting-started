@@ -118,3 +118,19 @@ A bits of history to be aware of, especially terminology evolutions.
 - `step` is a fine-grained task telling what actions to perform
   - I think of steps as a line of code
   - or shelling out to a CLI command (ie maven)
+
+## Build status (aka Project Status technically)
+
+- Each time you run a `job`/`project`/`pipeline`/etc Jenkins captures what it refers to as a build (result)
+  - Look in `$JENKINS_HOME/jobs/[JOBNAME]/builds/` for a history of `BUILD_IDs` and the captured results (output)
+- The irony is not lost that the result of running what is now a `Pipeline` or `Project` is often referred to as a `Build` or `Build status`!
+- `Aborted` means the build was interrupted before completion (manually, timeout, otherwise).
+- `Successful` means all build steps completed
+  - `Failed` means a build step failed (ie a compiler error)
+- `Stable` means no publishers reported a failure
+  - ?Publishers (post-build steps) run after the build steps and thus can amend a `Successful` status to be more specific
+    - a vestige (IMO) of the history of Jenkins.
+    - an example might be a unit test parser that reads the result of running unit tests
+    - `Publishers` are going to be configurable/nuanced in how they determine a failure (stable/`unstable`), so pay attention to the docs for a given `publisher`
+- Personally I see a `job`/`project`/`function` as a set of steps and don't bother to distinguish `build` vs `post-build` or `publisher` steps... because why?
+  - I wish we lived in a world where the `function` either aborted, failed or succeeded and really I just care if a problem exists, that the system helps me by telling me and makes it easy to dissect/troubleshoot.
