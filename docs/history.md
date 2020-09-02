@@ -100,7 +100,6 @@ A bits of history to be aware of, especially terminology evolutions.
 ## later
 
 - Fingerprint
-- Upstream/Downstream
 - Cloud
 - Label
 - Step (build steps, SUCCESSFUL/FAILED)

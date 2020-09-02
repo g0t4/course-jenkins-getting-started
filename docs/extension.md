@@ -10,3 +10,4 @@ Developing plugins is valuable alone but isn't necessary to benefit from the res
 - [Extensions Index](https://www.jenkins.io/doc/developer/extensions/) outlines extension points for
   - [`Jenkins Core`](https://www.jenkins.io/doc/developer/extensions/jenkins-core/)
   - and popular plugins such as the [pipeline-model-definition](https://www.jenkins.io/doc/developer/extensions/pipeline-model-definition/)
+  

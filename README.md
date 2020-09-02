@@ -17,6 +17,7 @@ These repos house examples for following along:
 
 - [all docs](docs)
   - [history](docs/history.md)
+    - [from jobs to pipelines](docs/from-jobs-to-pipelines.md)
   - [resources](docs/resources.md)
   - [roadmap]
     - [config-as-code](docs/roadmap.config-as-code.md)
