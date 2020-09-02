@@ -8,8 +8,8 @@ services:
     - "9080:8080"
     volumes:
     - ./jenkins_home:/var/jenkins_home
-    restart: unless-stopped
     # using a bind mount to the host `./jenkins_home` means I can easily peruse the jenkins_home files without needing to "get into the container"
+    restart: unless-stopped
     # a named volume is fine too - jenkins_home:/var/jenkins_home
 
 
@@ -17,6 +17,7 @@ services:
   # I like docker-compose because I can easily spin up multiple apps like a test email server alongside jenkins! for testing email notifications from jenkins (later)
   mails:
     image: mailhog/mailhog
+    restart: unless-stopped
     ports:
     - "8025:8025" # mailhog's web app (think test instance of gmail)
-    # "1025:1025" # mailhog has smtp on 1025 but I don't need to access that from the host, it's important for configuring test notifications from jenkins that route to mailhog
+    # "1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
