@@ -1,0 +1,23 @@
+{
+  "jenkins-runner.jobs": {
+    "spc": {
+      "runWith": "pipelines-7080",
+      "name": "spc",
+      "isDefault": true
+    }
+  },
+  "jenkins-runner.hostConfigs": {
+    "pipelines-7080": {
+      "url": "http://jenkins:7080",
+      "user": "admin",
+      "password": "admin",
+      "useCrumbIssuer": true
+    },
+    "freestyle-9080": {
+      "url": "http://jenkins:9080",
+      "user": "admin",
+      "password": "admin",
+      "useCrumbIssuer": true
+    }
+  }
+}
