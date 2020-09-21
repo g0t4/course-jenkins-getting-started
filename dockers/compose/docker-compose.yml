@@ -5,7 +5,7 @@ services:
   jenkins:
     image: jenkins/jenkins:2.255
     ports:
-    - "9080:8080"
+    - "127.0.0.1:9080:8080"
     volumes:
     - ./jenkins_home_on_host:/var/jenkins_home
     # using a bind mount to the host `./jenkins_home` means I can easily peruse the jenkins_home files without needing to "get into the container"
@@ -19,5 +19,14 @@ services:
     image: mailhog/mailhog
     restart: unless-stopped
     ports:
-    - "8025:8025" # mailhog's web app (think test instance of gmail)
-    # "1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
+    - "127.0.0.1:8025:8025" # mailhog's web app (think test instance of gmail)
+    # "127.0.0.1:1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
+
+
+## NOTES:
+# Host port bindings are constrained to listening on 127.0.0.1
+# - avoids external access to services
+# - To open external access:
+#   - Remove IP address constraint to open the flood gates
+#   - Bind to another IP 
+# - https://docs.docker.com/config/containers/container-networking/#published-ports
