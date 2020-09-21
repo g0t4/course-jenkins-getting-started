@@ -4,7 +4,7 @@ services:
   jenkins:
     image: jenkins/jenkins:2.257
     ports:
-      - "7080:8080"
+      - "127.0.0.1:7080:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
     restart: unless-stopped
@@ -14,8 +14,10 @@ services:
     image: mailhog/mailhog
     restart: unless-stopped
     ports:
-      - "7025:8025" # mailhog's web app (think test instance of gmail)
-    # "1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
+      - "127.0.0.1:7025:8025" # mailhog's web app (think test instance of gmail)
+    # - "127.0.0.1:1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
 
 volumes:
   jenkins_home:
+
+# FYI host ports only listening on 127.0.0.1 now, see other compose file for more. 
