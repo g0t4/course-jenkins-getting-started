@@ -28,34 +28,6 @@
     - Or, [Java](https://www.jenkins.io/solutions/java/)
   - [Extending Jenkins](https://www.jenkins.io/doc/developer/)
 - [Plugin Index](https://plugins.jenkins.io/)
-- Pipelines
-  - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
-  - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
-  - Authoring `pipeline` scripts:
-    - [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
-    - [`In SCM`](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm)
-      - [`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
-    - [`BlueOcean`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean)
-      - [`BlueOcean` docs](jenkins.io/doc/book/blueocean/)
-      - Official docs list this as separate category but it's really just via SCM + BlueOcean UI generating pipelines
-        - Arguably `BlueOcean` was yet another step toward the Freestyle project type... BUT, in terms of a simplified UI for pipelines... interesting to watch popularity drift back and forth as people have needs and are compelled to travel in differnet directions to solve those needs.
-      - BlueOcean can generate/scaffold and commit Jenkinsfiles
-      - Major dev of BlueOcean has stalled. From what I've read, as of late (2020), the goal is to use BlueOcean "lessons learned" to redesign the Classic UI (in time drastically).
-  - **Dynamic** documentation on a running instance, varies with plugins installed
-    - [Snippet Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator)
-      - <http://localhost:8080/pipeline-syntax/>
-      - Form based generation of steps for either a `scripted` or a `declarative` pipeline
-    - [Declarative Directive Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator)
-      - <http://localhost:8080/directive-generator>
-      - Form based generation of nested directives (ie `when`)
-        - NOT steps
-    - [Global Variable Reference](https://www.jenkins.io/doc/book/pipeline/getting-started/#global-variable-reference)
-      - <http://localhost:8080/pipeline-syntax/globals>
-      - `pipeline` declarative "entrypoint" is a global!
-    - [Pipeline As YAML Converter](http://jenkins:18080/job/vcs-spc/payConverter/)
-      - Great example of adding a plugin (yaml pipelines) and seeing new docs light up under the [`Pipeline Syntax`](http://jenkins:18080/pipeline-syntax/) section
-  - [Pipeline examples](https://www.jenkins.io/doc/pipeline/examples/)
-    - Sourced from [jenkinsci/pipeline-examples](https://github.com/jenkinsci/pipeline-examples)
 - [Project Structure and Governance](https://www.jenkins.io/project)
   - [Sub-projects](https://www.jenkins.io/projects/)
     - JCasC (see below)
@@ -72,3 +44,39 @@
 
 - [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
   - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
+- Pipelines
+  - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
+  - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
+  - Authoring `pipeline` scripts:
+    - [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
+    - [`In SCM`](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm)
+      - [`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
+    - [`BlueOcean`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean)
+      - [`BlueOcean` docs](jenkins.io/doc/book/blueocean/)
+      - Official docs list this as separate category but it's really just via SCM + BlueOcean UI generating pipelines
+        - Arguably `BlueOcean` was yet another step toward the Freestyle project type... BUT, in terms of a simplified UI for pipelines... interesting to watch popularity drift back and forth as people have needs and are compelled to travel in differnet directions to solve those needs.
+      - BlueOcean can generate/scaffold and commit Jenkinsfiles
+      - Major dev of BlueOcean has stalled. From what I've read, as of late (2020), the goal is to use BlueOcean "lessons learned" to redesign the Classic UI (in time drastically).
+  
+## Pipeline Syntax Live Docs/References
+
+- These are docs that are built-in to a Jenkins instance and are often dynamic according to the plugins installed. Like adding the [`pipeline-as-yaml`](https://plugins.jenkins.io/pipeline-as-yaml/) plugin adds `Pipeline As YAML Converter` tool under `Pipeline Syntax`
+
+- [Snippet Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator)
+  - <http://localhost:8080/pipeline-syntax/>
+  - Form based generation of steps for either a `scripted` or a `declarative` pipeline
+
+- [Declarative Directive Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator)
+  - <http://localhost:8080/directive-generator>
+  - Form based generation of nested directives (ie `when`)
+    - NOT steps
+
+- [Global Variable Reference](https://www.jenkins.io/doc/book/pipeline/getting-started/#global-variable-reference)
+  - <http://localhost:8080/pipeline-syntax/globals>
+  - `pipeline` declarative "entrypoint" is a global!
+
+- [Pipeline As YAML Converter](http://jenkins:18080/job/vcs-spc/payConverter/)
+  - Great example of adding a plugin (yaml pipelines) and seeing new docs light up under the [`Pipeline Syntax`](http://jenkins:18080/pipeline-syntax/) section
+
+- [Pipeline examples](https://www.jenkins.io/doc/pipeline/examples/)
+  - Sourced from [jenkinsci/pipeline-examples](https://github.com/jenkinsci/pipeline-examples)
