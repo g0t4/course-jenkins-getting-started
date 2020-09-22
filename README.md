@@ -5,8 +5,13 @@
 ## 2nd Edition Examples
 
 These repositories house examples for following along:
+- This course overview repository
+  - https://github.com/g0t4/jenkins-getting-started
 - [spring-petclinic](docs/spring-petclinic.md)
-- ... MORE COMING SOON ...
+- Jenkinsfile spc pipeline example
+  - https://github.com/jenkins-getting-started/jgsu-spc-jenkinsfile
+- Scannable demo org
+  - https://github.com/jenkins-getting-started
 
 ## 1st Edition
 

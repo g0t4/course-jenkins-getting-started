@@ -228,3 +228,25 @@ Examples (a mix of Wes ideas and stuff I see in reality)
     - Jenkins dogfooding itself!
 - [Contributing / participating](https://www.jenkins.io/participate)
   - [Meetups](https://www.jenkins.io/projects/jam)
+
+## TODOs to distill links into:
+
+- https://github.com/jenkins-infra/documentation/blob/master/ci.adoc
+- repos https://github.com/jenkins-infra
+- other GH repos 
+- https://www.jenkins.io/participate/document/
+- https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
+- https://docs.cloudbees.com/docs/admin-resources/latest/automating-with-jenkinsfile/creating-jenkinsfile
+- Plugins
+  - https://github.com/jenkinsci/docker-commons-plugin
+  - https://github.com/jenkinsci/docker-workflow-plugin
+  - https://github.com/jenkinsci/docker-agent
+  - https://github.com/jenkinsci/docker-build-publish-plugin
+  - https://github.com/jenkinsci/docker-build-step-plugin
+  - https://github.com/jenkinsci/docker-ssh-agent
+  - https://github.com/jenkinsci/kubernetes-plugin
+  - https://github.com/jenkinsci/docker-slaves-plugin
+  - https://github.com/jenkinsci/docker-custom-build-environment-plugin
+- https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator
+- https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Getting-Started
+- https://www.jenkins.io/doc/book/blueocean/dashboard/
