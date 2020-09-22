@@ -12,7 +12,7 @@
   - [Roadmap](https://www.jenkins.io/projects/roadmap)
 - [blog](https://www.jenkins.io/node/)
 - Documentation
-  - NOTE: often you'll find parts of the jenkins.io docs out of date, most of the time it's not material but it happens and you should be aware that the docs are not always (as is the case in any project) the latest state of the codebase. 
+  - NOTE: often you'll find parts of the jenkins.io docs out of date, most of the time it's not material but it happens and you should be aware that the docs are not always (as is the case in any project) the latest state of the codebase.
   - [User Guide / Handbook](https://www.jenkins.io/doc/)
     - [Glossary](https://www.jenkins.io/doc/book/glossary/)
   - [CloudBees](https://www.cloudbees.com)
@@ -67,3 +67,8 @@
         - Fun way to poke around and see some practical applications of Jenkins
         - Jenkins dogfooding itself!
     - [Meetups](https://www.jenkins.io/projects/jam/)
+
+## Pipeline resources
+
+- [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
+  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
