@@ -207,7 +207,7 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 ## jenkinsfile-runner (JFR)
 
 - v1.0 ~Dec 2020
--
+- Allows you to test Jenkinsfile locally without a hassle all via an official `jenkins/jenkinsfile-runner` image!
 
 ## Governance / Ecosystem / Community
 
@@ -223,7 +223,7 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 - [Infrastructure](https://www.jenkins.io/projects/infrastructure/)
   - [JIRA](https://issues.jenkins-ci.org)
     - by component, ie [Core](https://issues.jenkins-ci.org/browse/WEBSITE-760?jql=component%20%3D%20core)
-  - [Jenkins 4 Jenkins!!](https://ci.jenkins.io/)
+  - [https://ci.jenkins.io](https://ci.jenkins.io)
     - Fun way to poke around and see some practical applications of Jenkins
     - Jenkins dogfooding itself!
 - [Contributing / participating](https://www.jenkins.io/participate)
