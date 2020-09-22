@@ -43,21 +43,22 @@
 ## Pipeline resources
 
 - [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
-  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
-- Pipelines
-  - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
-  - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
-  - Authoring `pipeline` scripts:
-    - [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
-    - [`In SCM`](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm)
-      - [`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
-    - [`BlueOcean`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean)
-      - [`BlueOcean` docs](jenkins.io/doc/book/blueocean/)
-      - Official docs list this as separate category but it's really just via SCM + BlueOcean UI generating pipelines
-        - Arguably `BlueOcean` was yet another step toward the Freestyle project type... BUT, in terms of a simplified UI for pipelines... interesting to watch popularity drift back and forth as people have needs and are compelled to travel in differnet directions to solve those needs.
-      - BlueOcean can generate/scaffold and commit Jenkinsfiles
-      - Major dev of BlueOcean has stalled. From what I've read, as of late (2020), the goal is to use BlueOcean "lessons learned" to redesign the Classic UI (in time drastically).
-  
+  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.  
+
+- [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
+- [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
+
+- Authoring `pipeline` scripts:
+- [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
+- [`In SCM`](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm)
+  - [`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
+- [`BlueOcean`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean)
+  - [`BlueOcean` docs](jenkins.io/doc/book/blueocean/)
+  - Official docs list this as separate category but it's really just via SCM + BlueOcean UI generating pipelines
+    - Arguably `BlueOcean` was yet another step toward the Freestyle project type... BUT, in terms of a simplified UI for pipelines... interesting to watch popularity drift back and forth as people have needs and are compelled to travel in differnet directions to solve those needs.
+  - BlueOcean can generate/scaffold and commit Jenkinsfiles
+  - Major dev of BlueOcean has stalled. From what I've read, as of late (2020), the goal is to use BlueOcean "lessons learned" to redesign the Classic UI (in time drastically).
+
 ## Pipeline Syntax Live Docs/References
 
 - These are docs that are built-in to a Jenkins instance and are often dynamic according to the plugins installed. Like adding the [`pipeline-as-yaml`](https://plugins.jenkins.io/pipeline-as-yaml/) plugin adds `Pipeline As YAML Converter` tool under `Pipeline Syntax`
