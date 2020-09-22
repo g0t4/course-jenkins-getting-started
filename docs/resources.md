@@ -203,11 +203,14 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 - In docker images, replaces [`install-plugins.sh`](https://github.com/jenkinsci/docker/blob/master/install-plugins.sh)
   - Port from `bash` to `java`  
 
+## IDE/CLI pipeline productivity tools
 
-## jenkinsfile-runner (JFR)
+Assortment of tools to use on Jenkinsfile/pipelines outside of Jenkins:
 
-- v1.0 ~Dec 2020
-- Allows you to test Jenkinsfile locally without a hassle all via an official `jenkins/jenkinsfile-runner` image!
+- https://www.jenkins.io/doc/book/pipeline/development/
+- jenkinsfile-runner (JFR)
+  - v1.0 ~Dec 2020
+  - Allows you to test Jenkinsfile locally without a hassle all via an official `jenkins/jenkinsfile-runner` image!
 
 ## Governance / Ecosystem / Community
 
