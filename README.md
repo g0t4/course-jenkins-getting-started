@@ -19,6 +19,10 @@ _FYI docs are still under construction_
   - https://github.com/jenkins-getting-started
     - This is a GitHub organization I setup to house several repositories you can scan for with the features I demo at the end of the course.
 
+## 2nd Edition docs/notes
+
+See the [docs](docs) folder for various additional notes I've left for you. Quite a bit of this is stuff not in the course that I wanted to share with you as you get started. Some of it is fodder for learning beyond the course. 
+
 ## 1st Edition
 
 - This is an update to my original [`Getting Started with Jenkins 2`](https://www.pluralsight.com/courses/jenkins-2-getting-started) course.
@@ -27,14 +31,3 @@ _FYI docs are still under construction_
 - In this update, the `2` is dropped from the title even though I'm still covering the latest version of Jenkins which is still `2`.
 - [1st Edition Overview/Resources Gist (https://git.io/vKSVZ)](https://git.io/vKSVZ)
   - I share these mostly to avoid confusion with associated repos and examples that are and will continue to remain accessibly here on GitHub.
-
-## Things not covered in the course that I wanted to share with you:
-
-- [all docs](docs)
-  - [history](docs/history.md)
-    - [from jobs to pipelines](docs/from-jobs-to-pipelines.md)
-  - [resources](docs/resources.md)
-  - [JENKINS_HOME](docs/JENKINS_HOME.md)
-  - roadmap
-    - [config-as-code](docs/roadmap.config-as-code.md)
-
