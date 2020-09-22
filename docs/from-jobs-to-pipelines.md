@@ -51,6 +51,7 @@ Take a minute and think what all would be nice to have automated when it comes t
   - `build`
   - then `deploy to a test environment`
   - then `run integration tests`
+    - when time consuming, run tests or test sets in parallel
   - then `deploy to a manual testing environment`
   - pause for humans to tinker with `manual and exploratory tests`
   - if all is well, `simulate a production deployment` including tests

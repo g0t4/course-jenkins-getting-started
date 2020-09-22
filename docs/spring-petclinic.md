@@ -1,13 +1,12 @@
 # spring petclinic example
 
 - Maven requires java as a pre-requisite
-- petclinic uses `mvnw(.cmd)` to simplify access to `mvn`
+- petclinic uses Maven Wrapper `mvnw(.cmd)` to simplify access to `mvn`
 - `spring-petclinic` example is attributable to the wonderful work done here: <https://github.com/spring-projects/spring-petclinic>
 
 ```shell
-# fork the following repo and clone it to be able to push/pull changes
-# or use mine without the ability to push/pull changes
-# of if you're inclined, pull the upstream official spring-petclinic project and adapt the latest version to work with Jenkins as yet another possible challenge
+# create a fork of my repo if you want to push changes while following along
+# or use mine without the ability to push changes
 git clone <https://github.com/g0t4/jgsu-spring-petclinic>
 cd jgsu-spring-petclinic
 
