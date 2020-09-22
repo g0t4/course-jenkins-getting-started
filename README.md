@@ -31,3 +31,4 @@ See the [docs](docs) folder for various additional notes I've left for you. Quit
 - In this update, the `2` is dropped from the title even though I'm still covering the latest version of Jenkins which is still `2`.
 - [1st Edition Overview/Resources Gist (https://git.io/vKSVZ)](https://git.io/vKSVZ)
   - I share these mostly to avoid confusion with associated repos and examples that are and will continue to remain accessibly here on GitHub.
+- This `Jenkinsfile` highlights a complex pipeline with multiple nodes involved and parallelism, for a challenge try to get this up and running on your own. Or at least read through it and grok what you think is needed to get it working.
