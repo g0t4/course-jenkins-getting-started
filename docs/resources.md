@@ -43,13 +43,18 @@
   - **Dynamic** documentation on a running instance, varies with plugins installed
     - [Snippet Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator)
       - <http://localhost:8080/pipeline-syntax/>
+      - Form based generation of steps for either a `scripted` or a `declarative` pipeline
     - [Declarative Directive Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator)
       - <http://localhost:8080/directive-generator>
+      - Form based generation of nested directives (ie `when`)
+        - NOT steps
     - [Global Variable Reference](https://www.jenkins.io/doc/book/pipeline/getting-started/#global-variable-reference)
       - <http://localhost:8080/pipeline-syntax/globals>
       - `pipeline` declarative "entrypoint" is a global!
     - [Pipeline As YAML Converter](http://jenkins:18080/job/vcs-spc/payConverter/)
       - Great example of adding a plugin (yaml pipelines) and seeing new docs light up under the [`Pipeline Syntax`](http://jenkins:18080/pipeline-syntax/) section
+  - [Pipeline examples](https://www.jenkins.io/doc/pipeline/examples/)
+    - Sourced from [jenkinsci/pipeline-examples](https://github.com/jenkinsci/pipeline-examples)
 - [Project Structure and Governance](https://www.jenkins.io/project)
   - [Sub-projects](https://www.jenkins.io/projects/)
     - JCasC (see below)
