@@ -32,7 +32,8 @@
 ## Pipeline resources
 
 - [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
-  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.  
+
+  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
 
 - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
 - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
@@ -41,6 +42,7 @@
 - [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
 - [`In SCM`](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm)
   - [`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
+  - [CloudBees `Jenkinsfile` docs](https://docs.cloudbees.com/docs/admin-resources/latest/automating-with-jenkinsfile/creating-jenkinsfile)
 - [`BlueOcean`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean)
   - [`BlueOcean` docs](jenkins.io/doc/book/blueocean/)
   - Official docs list this as separate category but it's really just via SCM + BlueOcean UI generating pipelines
@@ -48,24 +50,41 @@
   - BlueOcean can generate/scaffold and commit Jenkinsfiles
   - Major dev of BlueOcean has stalled. From what I've read, as of late (2020), the goal is to use BlueOcean "lessons learned" to redesign the Classic UI (in time drastically).
 
+## Groovy resources
+
+- Pipelines are groovy scripts (close enough), so any groovy resources you have will be helpful.
+- :+1: Knowledge of groovy
+- Psychological Soap Box about `code` vs `config` vs `convention`   
+  - AND instances of types of code (`groovy` vs `java`)
+    or config formats (`xml` vs `json` vs `yml`) 
+  - IMHO `groovy` is somewhat easy to read and thus it is learnable with less investment than say `shell scripting` 😉
+  - I don't understand the supposition that people don't like code / can't code / don't want to use code... but somehow DSLs/configuration & convention (even more so) are superior in terms of grok-ability / preferable versus code... no, code/config/convention are all heads of the same coin.
+    - **(hint: means not ends)** 
+    - > tools in a toolbelt, carry all of them not just one
+  - > We like what we are familiar with (and we tend to become more familiar with what we like and avoid things that are difficult because even if at one time they were familiar they grow distant out of frustration and thus lack of preference). It's self-fulfilling.
+
 ## Pipeline Syntax Live Docs/References
 
 - These are docs that are built-in to a Jenkins instance and are often dynamic according to the plugins installed. Like adding the [`pipeline-as-yaml`](https://plugins.jenkins.io/pipeline-as-yaml/) plugin adds `Pipeline As YAML Converter` tool under `Pipeline Syntax`
 
 - [Snippet Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator)
+
   - <http://localhost:8080/pipeline-syntax/>
   - Form based generation of steps for either a `scripted` or a `declarative` pipeline
 
 - [Declarative Directive Generator](https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator)
+
   - <http://localhost:8080/directive-generator>
   - Form based generation of nested directives (ie `when`)
     - NOT steps
 
 - [Global Variable Reference](https://www.jenkins.io/doc/book/pipeline/getting-started/#global-variable-reference)
+
   - <http://localhost:8080/pipeline-syntax/globals>
   - `pipeline` declarative "entrypoint" is a global!
 
 - [Pipeline As YAML Converter](http://jenkins:18080/job/vcs-spc/payConverter/)
+
   - Great example of adding a plugin (yaml pipelines) and seeing new docs light up under the [`Pipeline Syntax`](http://jenkins:18080/pipeline-syntax/) section
 
 - [Pipeline examples](https://www.jenkins.io/doc/pipeline/examples/)
@@ -77,7 +96,14 @@
   - Historically, we've had post-init groovy scripts to modify the configuration of instances.
 
 ## Plugin Manager 2.0
-  
+
+- <https://github.com/jenkinsci/plugin-installation-manager-tool>
+
+## jenkinsfile-runner (JFR)
+
+- v1.0 ~Dec 2020
+-
+
 ## Governance / Ecosystem / Community
 
 - [Project Structure and Governance](https://www.jenkins.io/project)
