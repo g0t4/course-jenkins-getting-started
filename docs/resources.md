@@ -136,6 +136,7 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 
 - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
 - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
+- [Plugin Compatibility with Pipeline](https://github.com/jenkinsci/pipeline-plugin/blob/master/COMPATIBILITY.md)
 
 - Authoring `pipeline` scripts:
 - [`Classic UI`](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui)
