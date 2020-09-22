@@ -28,17 +28,6 @@
     - Or, [Java](https://www.jenkins.io/solutions/java/)
   - [Extending Jenkins](https://www.jenkins.io/doc/developer/)
 - [Plugin Index](https://plugins.jenkins.io/)
-- [Project Structure and Governance](https://www.jenkins.io/project)
-  - [Sub-projects](https://www.jenkins.io/projects/)
-    - JCasC (see below)
-    - [Blue Ocean](https://www.jenkins.io/projects/blueocean/)
-    - [Infrastructure](https://www.jenkins.io/projects/infrastructure/)
-      - [JIRA](https://issues.jenkins-ci.org)
-        - by component, ie [Core](https://issues.jenkins-ci.org/browse/WEBSITE-760?jql=component%20%3D%20core)
-      - [Jenkins 4 Jenkins!!](https://ci.jenkins.io/)
-        - Fun way to poke around and see some practical applications of Jenkins
-        - Jenkins dogfooding itself!
-    - [Meetups](https://www.jenkins.io/projects/jam/)
 
 ## Pipeline resources
 
@@ -81,3 +70,30 @@
 
 - [Pipeline examples](https://www.jenkins.io/doc/pipeline/examples/)
   - Sourced from [jenkinsci/pipeline-examples](https://github.com/jenkinsci/pipeline-examples)
+
+## JCasC - Configuration-as-code
+
+- Like pipelines-as-code did for freestyle jobs, configuration-as-code does for configuring the Jenkins `controller`
+  - Historically, we've had post-init groovy scripts to modify the configuration of instances.
+
+## Plugin Manager 2.0
+  
+## Governance / Ecosystem / Community
+
+- [Project Structure and Governance](https://www.jenkins.io/project)
+- [JEPs - Jenkins Enhancement Proposals](https://github.com/jenkinsci/jep/)
+  - Design of major new functionality that may or may not see the light of day.
+- [Sub-projects](https://www.jenkins.io/projects/)
+- [JCasC](https://www.jenkins.io/projects/jcasc/)
+- [Jenkins X](https://jenkins-x.io/) - opinionated Jenkins mindset (not necessarily components of Jenkins) meets k8s as the clustering tech for everything from dev to prod.
+- [Blue Ocean](https://www.jenkins.io/projects/blueocean/)
+- [Evergreen/Essentials](https://www.jenkins.io/projects/evergreen/)
+  - IIUC this has stalled too (services were never migrated earlier in 2020 to new prod cluster)
+- [Infrastructure](https://www.jenkins.io/projects/infrastructure/)
+  - [JIRA](https://issues.jenkins-ci.org)
+    - by component, ie [Core](https://issues.jenkins-ci.org/browse/WEBSITE-760?jql=component%20%3D%20core)
+  - [Jenkins 4 Jenkins!!](https://ci.jenkins.io/)
+    - Fun way to poke around and see some practical applications of Jenkins
+    - Jenkins dogfooding itself!
+- [Contributing / participating](https://www.jenkins.io/participate)
+  - [Meetups](https://www.jenkins.io/projects/jam)
