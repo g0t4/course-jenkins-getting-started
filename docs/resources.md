@@ -14,6 +14,11 @@
 - Documentation
   - [User Guide / Handbook](https://www.jenkins.io/doc/)
     - [Glossary](https://www.jenkins.io/doc/book/glossary/)
+  - [CloudBees](https://www.cloudbees.com)
+    - [docs](https://docs.cloudbees.com/)
+    - [Pipelines](https://docs.cloudbees.com/docs/admin-resources/latest/pipelines/)
+      - [Checkpoints](https://docs.cloudbees.com/docs/admin-resources/latest/pipelines/administering-jenkins-pipeline#inserting-checkpoints)
+    - [Plugins](https://docs.cloudbees.com/docs/admin-resources/latest/plugin-management/)
   - [Tutorials Overview](https://www.jenkins.io/doc/tutorials)
     - [Blog Post Tutorials (category)](https://www.jenkins.io/node/tags/tutorial/)
   - [Use-cases/Solutions Page](https://www.jenkins.io/solutions/)
