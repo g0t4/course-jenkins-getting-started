@@ -1,6 +1,25 @@
 # Resources
 
-- [Jenkins Project Site](https://www.jenkins.io/)
+
+
+## Top level resources
+
+- [jenkins.io](https://www.jenkins.io/)
+- GitHub orgs 
+  - [jenkinsci](https://github.com/jenkinsci)
+  - [jenkins-infra](https://github.com/jenkins-infra/)
+
+## jenkins-infra
+
+Infrastructure projects
+- [jenkins.io source](https://github.com/jenkins-infra/jenkins.io)
+- [IEP - Infrastructure Enhancement Proposals](https://github.com/jenkins-infra/iep)
+- [infra docs](https://github.com/jenkins-infra/documentation)
+- 
+
+
+## Resources Misc
+             
 - [Downloads](https://www.jenkins.io/download)
   - [Installing](https://www.jenkins.io/doc/book/installing/)
   - [JENKINS_HOME layout](https://wiki.jenkins.io/display/jenkins/administering+jenkins)
@@ -12,6 +31,7 @@
   - [Roadmap](https://www.jenkins.io/projects/roadmap)
 - [blog](https://www.jenkins.io/node/)
 - Documentation
+  - [Where to find documentation](https://www.jenkins.io/participate/document/)
   - NOTE: often you'll find parts of the jenkins.io docs out of date, most of the time it's not material but it happens and you should be aware that the docs are not always (as is the case in any project) the latest state of the codebase.
   - [User Guide / Handbook](https://www.jenkins.io/doc/)
     - [Glossary](https://www.jenkins.io/doc/book/glossary/)
@@ -29,11 +49,90 @@
   - [Extending Jenkins](https://www.jenkins.io/doc/developer/)
 - [Plugin Index](https://plugins.jenkins.io/)
 
-## Pipeline resources
+## Scaling up
+
+- [Distributed Builds](https://wiki.jenkins.io/display/JENKINS/Distributed+builds)
+  - Controller/Agent model (formerly Master/Agent -> formerly Master/Slave)
+
+### Labels
+
+`Node` - (wes defined): any **`process`** running either the `Controller` or `Agent` Application.
+
+`Labels` are a way to **identify** and/or **group nodes** based on characteristics that are pre-requisites for your `job`/`project` configuration... 
+
+- [ci.jenkins.io labels](https://github.com/jenkins-infra/documentation/blob/master/ci.adoc)
+
+Wes fodder for labels (think about what your automated tasks need and how to target nodes with those capabilities). It's kind of like if we all listed out the tasks we are good at and then along comes someone with a broken toilet... so we pull up all `plumbers` and hopefully someone is available and capable 
+  (a label is no guarantee that it is accurate!)
+Examples (a mix of Wes ideas and stuff I see in reality)
+  - Hardware
+    - RAM: `ram-2gb`, `ram-4gb`, `ram-8gb` etc
+    - CPU: `slow`, `medium`, `fast` 
+    - DISK: `ssd`, `hdd` or even ratings perhaps `max-read-speed-X` and `max-write-speed-Y`
+  - Dev tools installed
+    - Broad: `docker-cli`, `xcode`, `msbuild`, `jdk`, `maven`, `grade` `dotnet`
+    - Granular: `jdk7`, `jdk8`, `jdk9`, `mvn3` or `mvn2`
+  - Services
+    - `iis`, `apache`, `nginx`, 
+  - CPU architecture (`amd64`, `arm64`, `ppc64le`)
+  - OS/Distro
+    - Broad: `macos`, `linux`, `windows`
+    - Broad: `debian`, `ubuntu`, `rhel`, `centos`
+    - Granular: 
+      - Linux distros 
+        - `debian 9/stretch`, `8/jessie`
+        - `ubuntu-(18.04.5|20.04.1|16.04.7)-lts`
+          - (https://releases.ubuntu.com/)
+      - Windows
+        - `windows-server-(2004|1909|1903)`
+        - `windows-server-(2019|2016|2012r2|2012|2008r2|2008`
+        - `win10-(2004|1909|1809)`
+        - [versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions)
+      - macOS
+        - `macos-10.(+15..12)`
+        - `osx-10.(11..8)`
+        - `macosx-10.(7...0)`
+        - [versions w/ codenames](https://en.wikipedia.org/wiki/MacOS#Software_compatibility)
+  - Browser 
+    - `internet-explorer`, `chrome`, `firefox`, `edge`, `chrome-canary`
+- Consider deferring combined labels to be a `"querytime"` feature not a `"labeltime"` feature
+  - Instead of `ubuntu-20.04.1-lts` we might have:
+    - `ubuntu` + `20.04.1` + `lts`
+    - So I could target nodes with just `ubuntu` 
+    - Or, I could say `ubuntu` + `lts` 
+    - Or, `windows` + `server` + `2016`
+  - Why? 
+    - Avoid redundancy
+    - Fewer labels, less time labeling.  
+    - Explosion of combinations can be confusing to find what you need
+    - Many labels will go unused
+    - Many have zero relevance to the targeting you need
+- Consider deferring the labeling process until needed unless it's broad and not a substantial cost. You could literally manually add labels to a small cluster if you need to query a subset of agents that you don't have labels to target.
+- Consider dynamic labeling - when the jenkins "node" process runs it can sniff out (aka fingerprint) the environment to set appropriate labels for itself.  
+
+
+
+
+## Dockers
 
 - [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
-
   - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
+- Official images
+  - [jenkins/jenkins](https://github.com/jenkinsci/docker) Controller
+  - [jenkins/inbound-agent](https://hub.docker.com/r/jenkins/inbound-agent/)
+    - [Source](https://github.com/jenkinsci/docker-inbound-agent)
+    - Deprecated, former repository (image) names: 
+      - [jenkinsci/jnlp-slave](https://hub.docker.com/r/jenkinsci/jnlp-slave)
+      - [jenkins/jnlp-slave](https://hub.docker.com/r/jenkins/jnlp-slave)
+  - []
+- Plugins
+  - [Jenkins Cloud for Docker](https://github.com/jenkinsci/docker-plugin) for dynamic docker agents
+    - 
+- Source
+  - https://github.com/jenkinsci?q=docker
+
+
+## Pipeline resources
 
 - [Pipeline Syntax Reference](https://www.jenkins.io/doc/book/pipeline/syntax/)
 - [Pipeline Step Reference](https://www.jenkins.io/doc/pipeline/steps)
@@ -93,11 +192,17 @@
 ## JCasC - Configuration-as-code
 
 - Like pipelines-as-code did for freestyle jobs, configuration-as-code does for configuring the Jenkins `controller`
-  - Historically, we've had post-init groovy scripts to modify the configuration of instances.
+  - Historically, we've had `post-init groovy scripts` to modify the configuration of instances.
+    - [Groovy Hook Scripts](https://www.jenkins.io/doc/book/managing/groovy-hook-scripts/)
+- [README.md docs](https://github.com/jenkinsci/configuration-as-code-plugin)
+- 
 
-## Plugin Manager 2.0
+## Plugin Installation Manager
 
 - <https://github.com/jenkinsci/plugin-installation-manager-tool>
+- In docker images, replaces [`install-plugins.sh`](https://github.com/jenkinsci/docker/blob/master/install-plugins.sh)
+  - Port from `bash` to `java`  
+
 
 ## jenkinsfile-runner (JFR)
 
