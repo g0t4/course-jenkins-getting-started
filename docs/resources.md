@@ -113,24 +113,6 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 
 
 
-## Dockers
-
-- [Docker + Pipeline](https://www.jenkins.io/doc/book/pipeline/docker)
-  - These two tools together are a formidable force for simplicity and yet flexibility in all sorts of complicated CI/CD pipeline scenarios.
-- Official images
-  - [jenkins/jenkins](https://github.com/jenkinsci/docker) Controller
-  - [jenkins/inbound-agent](https://hub.docker.com/r/jenkins/inbound-agent/)
-    - [Source](https://github.com/jenkinsci/docker-inbound-agent)
-    - Deprecated, former repository (image) names: 
-      - [jenkinsci/jnlp-slave](https://hub.docker.com/r/jenkinsci/jnlp-slave)
-      - [jenkins/jnlp-slave](https://hub.docker.com/r/jenkins/jnlp-slave)
-  - []
-- Plugins
-  - [Jenkins Cloud for Docker](https://github.com/jenkinsci/docker-plugin) for dynamic docker agents
-    - 
-- Source
-  - https://github.com/jenkinsci?q=docker
-
 
 ## Pipeline resources
 
@@ -198,12 +180,6 @@ Examples (a mix of Wes ideas and stuff I see in reality)
 - [README.md docs](https://github.com/jenkinsci/configuration-as-code-plugin)
 - 
 
-## Plugin Installation Manager
-
-- <https://github.com/jenkinsci/plugin-installation-manager-tool>
-- In docker images, replaces [`install-plugins.sh`](https://github.com/jenkinsci/docker/blob/master/install-plugins.sh)
-  - Port from `bash` to `java`  
-
 ## IDE/CLI pipeline productivity tools
 
 Assortment of tools to use on Jenkinsfile/pipelines outside of Jenkins:
@@ -241,16 +217,6 @@ Assortment of tools to use on Jenkinsfile/pipelines outside of Jenkins:
 - https://www.jenkins.io/participate/document/
 - https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
 - https://docs.cloudbees.com/docs/admin-resources/latest/automating-with-jenkinsfile/creating-jenkinsfile
-- Plugins
-  - https://github.com/jenkinsci/docker-commons-plugin
-  - https://github.com/jenkinsci/docker-workflow-plugin
-  - https://github.com/jenkinsci/docker-agent
-  - https://github.com/jenkinsci/docker-build-publish-plugin
-  - https://github.com/jenkinsci/docker-build-step-plugin
-  - https://github.com/jenkinsci/docker-ssh-agent
-  - https://github.com/jenkinsci/kubernetes-plugin
-  - https://github.com/jenkinsci/docker-slaves-plugin
-  - https://github.com/jenkinsci/docker-custom-build-environment-plugin
 - https://www.jenkins.io/doc/book/pipeline/getting-started/#directive-generator
 - https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Getting-Started
 - https://www.jenkins.io/doc/book/blueocean/dashboard/
