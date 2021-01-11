@@ -21,7 +21,7 @@ See the [docs](docs) folder for various additional notes I've left for you. Quit
 ## FAQ
 
 - **I am having an issue with building code in the `jenkins2-...` repository, how do I fix that**
-  - If you are watching the updated / 2nd Edition course (most likely). Use the updated repos too. (see above).
+  - If you are watching the updated / 2nd Edition course (most likely). Use the updated repos too ([see above](https://github.com/g0t4/course-jenkins-getting-started/blob/master/README.md#2nd-edition-examples-current-edition)).
   - If you want a challenge or are watching the 1st edition, try to adapt the 1st edition repos to work with the 2nd edition examples! A great learning opportunity!
 
 ## 1st Edition 
