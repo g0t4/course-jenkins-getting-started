@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   jenkins:
-    image: jenkins/jenkins:2.255
+    image: jenkins/jenkins:lts-jdk11
     ports:
     - "127.0.0.1:9080:8080"
     volumes:
